@@ -41,7 +41,7 @@ function App() {
               <Link to="/trading">Trading</Link>
               <Link to="/contracts">Contracts</Link>
               <Link to="/alerts">Alerts</Link>
-              <Link to="/chatbot">🤖 AI Assistant</Link>
+              <Link to="/chatbot">ChatBot</Link>
               <Link to="/education">Education</Link>
               <button onClick={handleLogout} style={{marginLeft: '10px'}}>Logout</button>
             </div>
