@@ -29,6 +29,10 @@ const api = {
   toggleAlert: (alertId) => axios.put(`${API_BASE}/alerts/${alertId}/toggle`),
   deleteAlert: (alertId) => axios.delete(`${API_BASE}/alerts/${alertId}`),
   checkAlerts: () => axios.get(`${API_BASE}/alerts/check`),
+
+  // Chatbot APIs
+  sendChatMessage: (data) => axios.post(`${API_BASE}/chatbot/chat`, data),
+  getChatbotLanguages: () => axios.get(`${API_BASE}/chatbot/languages`),
 }
 
 export default api

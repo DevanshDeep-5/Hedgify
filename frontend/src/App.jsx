@@ -6,6 +6,7 @@ import Trading from './pages/Trading'
 import Contracts from './pages/Contracts'
 import Alerts from './pages/Alerts'
 import Education from './pages/Education'
+import Chatbot from './pages/Chatbot'
 import Login from './pages/Login'
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
               <Link to="/trading">Trading</Link>
               <Link to="/contracts">Contracts</Link>
               <Link to="/alerts">Alerts</Link>
+              <Link to="/chatbot">🤖 AI Assistant</Link>
               <Link to="/education">Education</Link>
               <button onClick={handleLogout} style={{marginLeft: '10px'}}>Logout</button>
             </div>
@@ -52,6 +54,7 @@ function App() {
           <Route path="/trading" element={<Trading user={user} />} />
           <Route path="/contracts" element={<Contracts user={user} />} />
           <Route path="/alerts" element={<Alerts user={user} />} />
+          <Route path="/chatbot" element={<Chatbot user={user} />} />
           <Route path="/education" element={<Education />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
